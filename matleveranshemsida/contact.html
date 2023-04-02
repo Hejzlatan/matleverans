@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- fontawesome länk här -->
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
+    
+    <!-- style länk här -->
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* Contact form styles */
+        .contact-form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 50px;
+        }
+        .contact-form h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .contact-form label {
+            display: block;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            padding: 10px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            resize: none;
+        }
+        .contact-form textarea {
+            height: 150px;
+        }
+        .contact-form input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .contact-form input[type="submit"]:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="logo">
+            <img src="images/logo.png" alt="">
+        </div>
+
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="menu.html">menu</a>
+            <a href="contact.html">contact</a>
+            <a href="myOrders.html">myOrders</a>
+        </nav>
+
+        <div class="icons">
+            <div id="menu-bar" class="fas fa-bars"></div>
+            <a class="login-btn" href="#">Login</a>
+            <a class="sign up-btn" href="#">Sign up</a>
+        </div>
+
+
+    </header>
+
+    <div class="home">
+
+        <div class="main-home">
+            <div class="home-inner-content">
+                <div class="home-image">
+                <img src="vegan-banana-pancakes-stack-768x1152.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="home-inner-content">
+                <div class="home-text-content">
+                <h1>contact us below here</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, voluptatem officiis quas illum pariatur, sint amet dignissimos asperiores</p>
+                <!-- Contact form startar här -->
+                <div class="contact-form">
+                    <h2>Contact Us</h2>
+                    <form action="#" method="POST">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your email" required>
+                
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
+                
+                        <button type="submit" value="Submit">Submit</button>
+                        <hr>
+                        
+                        <button type="refresh" value="Refresh">Refresh</button>
+                    </form>
+                    
+                </div>
+                
+            </body>
+            </html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders</title>
+    
+    <!-- fontawesome link here -->
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
+    
+    <!-- style link here -->
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .checkout-form {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        
+        .checkout-form h2 {
+            margin-bottom: 20px;
+        }
+        
+        .checkout-form .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .checkout-form label {
+            display: block;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        
+        .checkout-form .form-control {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        .checkout-form button {
+            background-color: #0095f6;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <header class="header">
+        <div class="logo">
+            <img src="images/logo.png" alt="">
+        </div>
+
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="menu.html">menu</a>
+            <a href="contact.html">contact</a>
+            <a href="myOrders.html">myOrders</a>
+        </nav>
+
+        <div class="icons">
+            <div id="menu-bar" class="fas fa-bars"></div>
+            <a class="login-btn" href="#">Login</a>
+            <a class="sign up-btn" href="#">Sign up</a>
+        </div>
+
+
+    </header>
+
+    <div class="our-menu-food">
+        <h1 class="menu-title">My Orders</h1>
+    
+        <div class="order-container">
+    
+            <div class="order-item">
+                <!-- Bild på maträtten -->
+                <div class="order-img">
+                    <img src="easy-choc-hazelnut-pancakes-160639-1.jpg" alt="" class="menu-img">
+                </div>
+                <!-- Information om maträtten -->
+                <div class="order-details">
+                    <h3 class="menu-item">Easy choc-hazelnut pancakes</h3>
+                    <p class="menu-price">Price: $1.2</p>
+                    <p class="menu-quantity">Quantity: 3</p>
+                </div>
+            </div>
+    
+            <div class="order-item">
+                <!-- Bild på maträtten -->
+                <div class="order-img">
+                    <img src="pancakes-158342-3.jpg" alt="" class="menu-img">
+                </div>
+                <!-- Information om maträtten -->
+                <div class="order-details">
+                    <h3 class="menu-item">Fluffy American style pancakes</h3>
+                    <p class="menu-price">Price: $1.2</p>
+                    <p class="menu-quantity">Quantity: 1</p>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    
+
+        
+<!-- Beställningsformulär -->
+        <form action="#" class="checkout-form">
+            <h2>Checkout</h2>
+
+            <div class="form-group">
+              <label for="name">Fullständigt namn</label>
+              <input type="text" class="form-control" id="name" name="name" placeholder="Ange ditt namn" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-postadress</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Ange din e-postadress" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Telefonnummer</label>
+              <input type="tel" class="form-control" id="phone" name="phone" placeholder="Ange ditt telefonnummer" required>
+            </div>
+
+            <div class="form-group">
+              <label for="address">Adress</label>
+              <input type="text" class="form-control" id="address" name="address" placeholder="Ange din adress" required>
+            </div>
+
+            <div class="form-group">
+              <label for="postcode">Postnummer</label>
+              <input type="text" class="form-control" id="postcode" name="postcode" placeholder="Ange ditt postnummer" required>
+            </div>
+            <div class="form-group">
+                <label for="card-name">Namn på kortet</label>
+                <input type="text" class="form-control" id="card-name" name="card-name" placeholder="Ange namnet på kortet" required>
+            </div>
+            <div class="form-group">
+                <label for="card-number">Kortnummer</label>
+                <input type="text" class="form-control" id="card-number" name="card-number" placeholder="Ange kortnumret" required>
+            </div>
+            <div class="form-group">
+                <label for="expiry-date">Utgångsdatum</label>
+                <input type="text" class="form-control" id="expiry-date" name="expiry-date" placeholder="MM / ÅÅ" required>
+            </div>
+            <div class="form-group">
+                <label for="cvv">CVV</label>
+                <input type="text" class="form-control" id="cvv" name="cvv" placeholder="Ange CVV" required>
+            </div>
+            <h2>Total: $2.4</h2>
+            <button type="submit">Bekräfta beställning</button>
+            
+            </form>
+            </div>
+            <div class="before">
+                <img src="images/before footer.png" alt="">
+            </div>
+        
+            <div class="footer">
+                <div class="main-footer">
+                    <div class="footer-logo"><img src="images/footerlogo.png" alt=""></div>
+                </div>
+        
+                <footernav class="footer-navbar">
+            <a href="index.html">home</a>
+            <a href="menu.html">menu</a>
+            <a href="contact.html">contact</a>
+            <a href="myOrders.html">myOrders</a>
+                </footernav>
+            </div>
+        
+        </body>
+        </html>
+            
+            
+            
+            
+            
+            
+            
